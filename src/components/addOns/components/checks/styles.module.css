@@ -1,0 +1,142 @@
+.containerChecks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.itemChecks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 79px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: var(--white);
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: all .4s ease;
+
+}
+
+.itemChecksChecked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 79px;
+    border-radius: 8px;
+    border: 1px solid var(--purple);
+    background: var(--very-light-grey);
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: all .4s ease;
+
+}
+
+.itemChecks:hover {
+    border: 1px solid var(--purple);
+    transition: all .4s ease;
+}
+
+.cheks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 68px;
+    height: 100%;
+    position: relative;
+}
+
+
+.checkbox {
+    display: none;
+}
+
+.checkboxUncheck {
+    background-image: url('../../../../assets/checkbox_unckeck.png');
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.checkboxCheck {
+    background-image: url('../../../../assets/checkbox_check.png');
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.infoChecks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: calc(100% - 166px);
+    height: 100%;
+    position: relative;
+}
+
+.title {
+    color: var(--denim);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 7px;
+}
+
+.description {
+    color: var(--grey);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.priceChecks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98px;
+    height: 100%;
+    position: relative;
+    color: var(--purple);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+@media only screen and (max-width: 411px) {
+    .itemChecks, .itemChecksChecked {
+        height: 62px;
+        margin-bottom: 12px;
+    }
+
+    .cheks {
+        width: 52px;
+    }
+
+    .infoChecks {
+        width: calc(100% - 132px);
+    }
+
+    .priceChecks {
+        width: 80px;
+    }
+
+    .title {
+        margin-bottom: 3px;
+        font-size: 14px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+}

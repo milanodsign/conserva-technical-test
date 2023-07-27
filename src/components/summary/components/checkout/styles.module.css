@@ -1,0 +1,128 @@
+.containerCheckout {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.contentInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    height: auto;
+    border-radius: 8px;
+    background: var(--very-light-grey, #F8F9FF);
+    padding: 16px 24px 24px;
+    box-sizing: border-box;
+}
+
+.packageSelected {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 69px;
+    position: relative;
+}
+
+.packageSelected>div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+
+.packageSelected>div:first-child>span:first-child {
+    color: var(--denim);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 7px;
+}
+
+.packageSelected>div:first-child>span:last-child {
+    color: var(--grey);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.packageSelected>div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    color: var(--denim);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+hr {
+    opacity: 0.2043253630399704;
+    background: var(--grey, #9699AA);
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.addonsSelected {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.addonsSelected>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 8px 0;
+}
+
+.addonsSelected>div>span:first-child {
+    color: var(--grey);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.addonsSelected>div>span:last-child {
+    color: var(--denim);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 26px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.total>span:first-child{
+    color: var(--grey);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.total>span:last-child{
+    color: var(--purple);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+}

@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: 'Ubuntu', sans-serif;
+  --bg: rgba(239, 245, 255, 1);
+  --denim: rgba(2, 41, 89, 1);
+  --light-blue: rgba(171, 188, 255, 1);
+  --sky-blue: rgba(190, 226, 253, 1);
+  --purple: rgba(72, 62, 255, 1);
+  --white: rgba(255, 255, 255, 1);
+  --black: rgba(0, 0, 0, 1);
+  --red-error: rgba(238, 55, 74, 1);
+  --grey: rgba(150, 153, 170, 1);
+  --very-light-grey: rgba(248, 249, 255, 1);
+  --border-color: rgba(214, 217, 230, 1);
+}
+
+div#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden auto;
+}
+
+h1 {
+  color: var(--denim);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 11px;
+}
+
+h2 {
+  color: var(--grey);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 35px;
+}
+
+.css-w2bgmm,
+.css-1w8q89d {
+  background-color: var(--denim) !important;
+  border-radius: 10px !important;
+}
+
+.css-170e205 {
+  top: 2px !important;
+  left: 2px !important;
+  bottom: 2px !important;
+  right: 12px !important;
+}
+
+.css-tu4hyh {
+  top: 2px !important;
+  bottom: 2px !important;
+  right: 2px !important;
+  left: 12px !important;
+}

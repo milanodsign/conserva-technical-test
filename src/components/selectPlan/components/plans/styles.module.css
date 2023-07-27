@@ -1,0 +1,119 @@
+.containerPlans {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.containerPlans>div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.itemPlan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 138px;
+    height: 183px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: var(--white);
+    padding: 20px 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.itemPlan:hover {
+    border: 1px solid var(--purple);
+    transition: all .5s ease;
+}
+
+.itemPlanActive {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 138px;
+    height: 183px;
+    border-radius: 8px;
+    border: 1px solid var(--purple);
+    background: var(--very-light-grey);
+    padding: 20px 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.infoPlan {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.title {
+    color: var(--denim);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 7px;
+}
+
+.price {
+    color: var(--grey);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 7px;
+}
+
+.priceMontly {
+    color: var(--grey);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.description {
+    color: var(--denim);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media only screen and (max-width: 411px) {
+    .containerPlans>div:first-child {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .containerPlans>div:last-child {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .itemPlan,
+    .itemPlanActive {
+        width: 100%;
+        height: 77px;
+        margin: 0;
+        flex-direction: row;
+        padding: 17px 16px 20px;
+    }
+    .itemPlan>span:first-child,
+    .itemPlanActive>span:first-child{
+        margin-right: 14px;
+    }
+}

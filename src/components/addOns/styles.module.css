@@ -1,0 +1,29 @@
+.containerAddOns {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+    .containerAddOns {
+        padding: 32px 24px;
+        height: 450px;
+        border-radius: 10px;
+        background: var(--white, #FFF);
+        box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.10);
+        position: absolute;
+        top: -70px;
+        box-sizing: border-box;
+        width: calc(100% - 48px);
+    }
+}
+@media only screen and (max-width: 411px) {
+    .containerAddOns {
+        height: 470px;
+        width: calc(100% - 32px);
+    }
+}

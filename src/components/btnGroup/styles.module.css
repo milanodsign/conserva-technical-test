@@ -1,0 +1,48 @@
+.containerBtnGroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 186px);
+    height: auto;
+    position: absolute;
+    bottom: 32px;
+}
+
+.btnBack {
+    color: var(--grey);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.btnNextConfirm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 123px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    background: var(--purple);
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    transition: all .4s ease;
+}
+
+.btnBack:hover, .btnNextConfirm:hover{
+    opacity: .9;
+    transition: all .4s ease;
+}
+
+@media only screen and (max-width: 768px) {
+    .containerBtnGroup{
+        /* width: calc(100% - 48px); */
+        width: 90%;
+    }
+}
