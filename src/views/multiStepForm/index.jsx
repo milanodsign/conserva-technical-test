@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './styles.module.css';
 import { useSelector } from 'react-redux';
 import NavComponent from '../../components/navComponent';
-import YourInfo from '../../components/YourInfo';
+import YourInfo from '../../components/yourInfo';
 import SelectPlan from '../../components/selectPlan';
 import AddOns from '../../components/addOns';
 import Summary from '../../components/summary';
